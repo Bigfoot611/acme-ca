@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+
+  step-ca:
+    image: smallstep/step-ca
+    restart: unless-stopped
+    volumes:
+      - ./data/step:/home/step
+    network_mode: "host"
+    
