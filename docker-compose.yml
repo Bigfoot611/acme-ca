@@ -9,5 +9,4 @@ services:
       - "9000:9000"
     volumes:
       - ./data/step:/home/step
-    # network_mode: "host"
     
